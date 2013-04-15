@@ -54,6 +54,7 @@ module Clockwork
 
   class Event
     attr_accessor :job, :last
+    attr_reader :period
 
     def initialize(period, job, block, options={})
       @period = period
